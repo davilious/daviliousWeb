@@ -12,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    flex-flow: column;
   }
 
 div.row {
@@ -39,10 +40,15 @@ a {
   color: white;
 }
 
-.col:nth-child(1) {
+.col > .col {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+    
+.footer {
+  color: white;
+  margin-top: 20px;
 }
 </style>
 </head>
@@ -57,5 +63,6 @@ a {
       <img src="davila_pilates.png">
     </div>
 </div>
+<div class="footer">© 2024</div>
 </body>
 </html>
